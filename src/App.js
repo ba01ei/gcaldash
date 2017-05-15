@@ -25,13 +25,15 @@ class App extends Component {
   render() {
     var Iframe=this.props.iframe;
     return (
-      <div className="App">
-        <div style={{width: 768, height: 524, display: 'table'}} >
+      <div className="App" style={{textAlign: 'center', width: '100%'}}>
+        <div style={{height: 524, display: 'inline-table'}} >
           <div style={{display: 'table-cell', verticalAlign: 'middle'}}>
             <Clock />
           </div>
         </div>
-        <Iframe src={this.props.src+'&id='+this.state.refreshId} height={400} width={768} style={{borderWidth:0}} />
+        <div>
+          <Iframe src={this.props.src+'&id='+this.state.refreshId} height={400} width={768} style={{borderWidth:0}} />
+        </div>
       </div>
     );
   }
