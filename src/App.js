@@ -26,12 +26,12 @@ class App extends Component {
     var Iframe=this.props.iframe;
     return (
       <div className="App">
-        <div style={{width: 768, height: 424, display: 'table'}} >
+        <div style={{width: 768, height: 524, display: 'table'}} >
           <div style={{display: 'table-cell', verticalAlign: 'middle'}}>
             <Clock />
           </div>
         </div>
-        <Iframe src={this.props.src+'&id='+this.state.refreshId} height={500} width={768} style={{borderWidth:0}} />
+        <Iframe src={this.props.src+'&id='+this.state.refreshId} height={400} width={768} style={{borderWidth:0}} />
       </div>
     );
   }
