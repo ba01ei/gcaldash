@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: AmericanTypewriter-Bold;
+  font-family: Courier-Bold;
   color: white;
   background-color: #100020;
 }
 
 h1 {
-  font-size: 160px;
+  font-size: 150px;
 }
